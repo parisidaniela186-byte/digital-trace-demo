@@ -13,12 +13,18 @@
       color: #222;
     }
     .box {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       background: white;
       padding: 24px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    }
+    embed {
+      width: 100%;
+      height: 700px;
+      border: 1px solid #ccc;
+      margin-top: 15px;
     }
     a {
       display: inline-block;
@@ -30,19 +36,29 @@
       border-radius: 6px;
       font-weight: bold;
     }
+    .note {
+      margin-top: 12px;
+      padding: 10px;
+      background: #f8f8f8;
+      border-left: 4px solid #888;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
   <div class="box">
     <h1>Production Order</h1>
     <p>
-      The production order is not shown in this demonstrative version of the system,
-      as operational documents and internal references are omitted for confidentiality reasons.
+      The document below shows the production order associated with the identified subassembly.
+      The content has been included in an anonymized form for thesis purposes.
     </p>
-    <p>
-      In a real operating environment, this section would allow the operator to access the current
-      work order, including routing, process phase, released quantity and execution status.
-    </p>
+
+    <embed src="Odl.pdf" type="application/pdf">
+
+    <div class="note">
+      In the actual operating system, this section would allow direct access to the production order, including routing, process phase, released quantity and execution status.
+    </div>
+
     <a href="index.html">BACK TO COMPONENT DATA</a>
   </div>
 </body>

@@ -13,12 +13,18 @@
       color: #222;
     }
     .box {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       background: white;
       padding: 24px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin-top: 15px;
     }
     a {
       display: inline-block;
@@ -30,19 +36,29 @@
       border-radius: 6px;
       font-weight: bold;
     }
+    .note {
+      margin-top: 12px;
+      padding: 10px;
+      background: #f8f8f8;
+      border-left: 4px solid #888;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
   <div class="box">
     <h1>Technical Drawing</h1>
     <p>
-      The technical drawing associated with this subassembly is not displayed in this simulation
-      in order to preserve the confidentiality of industrial documentation.
+      The image below shows the technical drawing associated with the identified subassembly.
+      The document has been included in an anonymized form for thesis purposes.
     </p>
-    <p>
-      In an actual company implementation, this section would provide direct access to the latest
-      approved technical drawing linked to the corresponding material code and production status.
-    </p>
+
+    <img src="technical_drawing.jpeg" alt="Technical Drawing">
+
+    <div class="note">
+      In the actual operating system, this section would provide direct access to the latest approved technical drawing linked to the corresponding material code.
+    </div>
+
     <a href="index.html">BACK TO COMPONENT DATA</a>
   </div>
 </body>
